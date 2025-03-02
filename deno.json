@@ -1,6 +1,10 @@
 {
   "tasks": {
-    "start": "deno run -A --unstable main.ts"
+    "start": "deno run -A --unstable main.ts",
+    "test": "deno test -A"
   },
-  "importMap": "import_map.json"
+  "importMap": "import_map.json",
+  "compilerOptions": {
+    "lib": ["deno.window"]
+  }
 }
